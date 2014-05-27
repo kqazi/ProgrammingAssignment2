@@ -40,7 +40,7 @@ cacheSolve <- function(x, ...) {
         } 
 
         # if cached matrix and inverse aren't null AND input matrix equals cachedMatrix then return cached inverse
-        if(!is.null(cachedMatrix) && !is.null(cachedInverse) && all.equal(inputMatrix, cachedMatrix)) {
+        if(!is.null(cachedMatrix) && !is.null(cachedInverse) && identical(inputMatrix, cachedMatrix)) {
                 message("Inverse of matrix in cache and has not changed")
                 return(cachedInverse)
         } 
