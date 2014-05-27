@@ -1,5 +1,5 @@
 
-## Object to store cached matrix and matrix inverse so it can be called from cacheSolve()
+## Object to store cached matrix inverse so it can be called from cacheSolve()
 
 makeCacheMatrix <- function(x = matrix()) {
         cachedInverse <- NULL
